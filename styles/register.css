@@ -1,0 +1,61 @@
+body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #e9d7d7;
+     /*background-image: url(../images/logo-simplon.png);
+     background-repeat: no-repeat;*/
+}
+form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #9d9292;
+     width: 30%;
+     height: 70%;
+     border-radius: 5px;
+}
+
+input {
+     width: 300px;
+     height: 25px;
+     display: block;
+     border: 2px solid #1e00ff;
+     border-radius: 10px;
+     padding: 5px;
+     margin: 15px;
+}
+
+h3 {
+     font-size: 80px;
+     font-family: "Bahnschrift";
+     color: rgb(182, 182, 182);
+     margin: 0px;
+     text-align: center;
+}
+
+button {
+     background-color: #f02c2c;
+     border: 2px solid #767676;
+     width: 170px;
+     height: 50px;
+     border-radius: 5px;
+     margin: 15px;
+     color: white;
+     text-align: center;
+     font-size: 25px;
+     cursor: pointer;
+}
+
+.warning h3 {
+     font-size: 15px;
+     color: black;
+     background-color: white;
+     padding: 10px;
+     border: 2px solid red;
+     width: 50%;
+     border-radius: 10px;
+     font-weight: lighter;
+     font-style: italic;
+}

@@ -1,0 +1,87 @@
+* {
+     margin: 0%;
+     padding: 0%;
+}
+body {
+     background-color: #e9d7d7;
+     position: relative;
+     background-image: url(../images/background-simplon.svg);
+     background-size: cover;
+}
+.main {
+     animation: entrance;
+     animation-duration: 1s;
+     width: auto;
+     height: auto;
+     min-height: 50%;
+     background-color: white;
+     overflow: auto;
+     min-width: 800px;
+     border-radius: 5px;
+     margin: 10px;
+     max-width: 80%;
+     box-shadow: 2px 5px 10px 2px black;
+}
+.main h3 {
+     background-color: #3a3a3a;
+     height: 35px;
+     margin: auto;
+     color: white;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: "Bahnschrift";
+}
+.tablebody {
+     border: 1px solid rgba(0, 0, 0, 0.301);
+     height: 30px;
+     width: 98%;
+     border-radius: 5px;
+     background-color: #ffc0c03b;
+     margin: 5px auto 5px auto;
+}
+
+.tablebody td {
+     width: 80px;
+}
+.tablebody h6 {
+     text-align: left;
+     font-family: "Bahnschrift";
+     font-size: 15px;
+     width: 80px;
+}
+
+.form {
+     position: absolute;
+     top: 10px;
+     right: 50px;
+}
+
+input {
+     width: 300px;
+     height: 30px;
+     border: 2px solid #3a3a3a;
+     border-radius: 5px;
+     text-align: center;
+}
+
+button {
+     height: 35px;
+     width: 100px;
+     border: 2px solid #3a3a3a;
+     border-radius: 5px;
+}
+
+
+@keyframes entrance {
+     from {
+          transform: translateX(-60px);
+          opacity: 0;
+     }
+
+     to {
+          transform: translateX(0);
+          opacity: 1;
+     }
+}

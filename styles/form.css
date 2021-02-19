@@ -1,0 +1,144 @@
+* {
+     margin: 0%;
+     padding: 0%;
+}
+body {
+     background-color: #e9d7d7;
+     background-image: url(../images/background-simplon.svg);
+     background-size: cover;
+}
+.blocklab {
+     display: block;
+}
+.textinput {
+     width: 350px;
+     border: 2px solid #a37aff;
+     border-radius: 5px;
+     height: 30px;
+     margin-top: 15px;
+     font-size: 18px;
+     font-family: "Bahnschrift";
+     color: #a37aff;
+     padding: 2px;
+}
+
+.textinput:invalid {
+     width: 350px;
+     border: 2px solid #fa0101;
+     border-radius: 5px;
+     height: 30px;
+}
+#main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+input {
+     margin: 0px;
+}
+label {
+     margin: 0px 20px 0px 0px;
+     font-family: "Bahnschrift";
+     font-size: 20px;
+     color: white;
+}
+form div {
+     margin-bottom: 20px;
+}
+#date {
+     border: 2px solid #a37aff;
+     border-radius: 5px;
+     width: 150px;
+     height: 25px;
+     font-size: 18px;
+     font-family: "Bahnschrift";
+     color: #a37aff;
+     padding: 2px;
+}
+.radioinput {
+     border: 2px solid #a37aff;
+     padding: 10px;
+}
+button {
+     cursor: pointer;
+     display: inline-block;
+     width: 130px;
+     height: 40px;
+     background-color: #5506ff4f;
+     border: 2px solid white;
+     border-radius: 8px;
+     color: white;
+     font-size: 18px;
+     font-family: "Bahnschrift";
+     margin: auto;
+}
+#reset {
+     display: inline-block;
+     width: 130px;
+     height: 40px;
+     background-color: #ff060669;
+     border: 2px solid rgb(145, 169, 248);
+     border-radius: 8px;
+     color: white;
+     font-size: 18px;
+     font-family: "Bahnschrift";
+     margin: auto;
+}
+
+.form {
+     box-shadow: 2px 5px 10px 2px black;
+     animation: entrance;
+     animation-duration: 1s;
+     border-width: 2px;
+     border-color: rgb(255, 0, 0);
+     border-style: solid;
+     border-radius: 5px;
+     padding: 30px;
+     background-color: rgba(0, 0, 0, 0.596);
+     position: relative;
+}
+
+@keyframes entrance {
+     from {
+          transform: translateX(-60px);
+          opacity: 0;
+     }
+
+     to {
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
+
+#alert {
+     position: absolute;
+     top: -5%;
+     left: 15%;
+     background-color: white;
+     border: 2px solid black;
+     font-size: 30px;
+     padding: 5px;
+     border-radius: 10px;
+     animation: alert;
+     animation-duration: 5s;
+     opacity: 0;
+}
+
+@keyframes alert {
+     0% {
+          opacity: 0;
+     }
+     50% {
+          opacity: 1;
+     }
+     100% {
+          opacity: 0;
+     }
+}
+
+.form img {
+     width: 40%;
+     display: block;
+     margin: auto;
+}
